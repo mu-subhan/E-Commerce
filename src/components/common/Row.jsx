@@ -1,16 +1,13 @@
-import React ,{Component} from "react";
+import React  from "react";
 
 
-class Row extends Component {
-
-    render(){
+const Row = ({className,children}) =>{
         return(
-            <div className={`flex ${this.props.className}`}>
-                {this.props.children}
+            <div className={`flex ${className}`}>
+                {children}
             </div>
         )
-     
-    }
+
 }
 
 export default Row;

@@ -4,6 +4,7 @@ import BottomHeader from './components/Header/BottomHeader';
 import HeroSection from './components/Home/HeroSection';
 import PopularProduct from './components/Home/PopularProduct';
 import BestSellerProducts from './components/Home/BestSellerProducts';
+import Footer from './components/Footer';
 
 function App() {
    
@@ -14,6 +15,8 @@ function App() {
       <HeroSection />
       <PopularProduct />
       <BestSellerProducts/>
+      <Footer/>
+
     </div>
     
     

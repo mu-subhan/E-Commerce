@@ -1,24 +1,21 @@
+import React from "react";
+import {BrowserRouter as  Router,Routes,Route} from 'react-router-dom'
+import Home from "./pages/Home";
+import ProductDetail from "./pages/ProductDetail";
+import Cart from "./pages/Cart";
 
-import TopHeader from './components/Header/TopHeader';
-import BottomHeader from './components/Header/BottomHeader';
-import HeroSection from './components/Home/HeroSection';
-import PopularProduct from './components/Home/PopularProduct';
-import BestSellerProducts from './components/Home/BestSellerProducts';
-import Footer from './components/Footer';
 
 function App() {
    
   return (
-    <div className='w-full bg-[#1e28320d] h-[60px]'>
-     <TopHeader />
-      <BottomHeader />
-      <HeroSection />
-      <PopularProduct />
-      <BestSellerProducts/>
-      <Footer/>
+  <Router>
+    <Routes>
+    <Route path="/" Component={Home} exact/>
+    <Route path="/product-detail" Component={ProductDetail} exact/>
+    <Route path="/cart" Component={Cart} exact/>
 
-    </div>
-    
+    </Routes>
+  </Router>
     
   );
 }

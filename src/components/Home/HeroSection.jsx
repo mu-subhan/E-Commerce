@@ -42,6 +42,7 @@
 import React from 'react';
 // import Button from '../common/Button';
 import Row from '../common/Row';
+import Button from '../common/Button';
 
 const HeroSection = () => {
   return (
@@ -53,9 +54,7 @@ const HeroSection = () => {
             You can explore and shop many products different collections from
             various brands here.
           </p>
-          <button className="h-[50px] w-[20%] text-white bg-black text-[20px] font-medium mt-[50px]">
-                Buy Now
-         </button>
+          <Button/>
 
         </div>
         <div className="w-[46%]">

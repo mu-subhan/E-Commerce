@@ -17,7 +17,7 @@ const BottomHeader = () => {
         <div className="w-full px-[10%] h-[60px] bg-[#1e28320d]">
         <Row className ='flex items-center h-full justify-between'>
           {menus.map((item) =>(
-            <p className='text-[16px] text-slate-800 key={item}'>
+            <p className='text-[16px] text-slate-800' key={item}>
               {item}
             </p>
           ))}        
